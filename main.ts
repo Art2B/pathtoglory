@@ -1,6 +1,8 @@
 import { Application } from "jsr:@oak/oak/application";
 import { Router } from "jsr:@oak/oak/router";
 
+const PORT = 80;
+
 const HtmlTemplate = await Deno.readTextFile("./templates/index.html");
 
 const HomePage = await Deno.readTextFile("./pages/home.html");
@@ -55,4 +57,8 @@ app.use(async (ctx, next) => {
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-app.listen({ port: 80 });
+app.addEventListener("listen", () => {
+  console.log(`Web server started at http://127.0.0.1:${PORT}`);
+});
+
+app.listen({ port: PORT });
