@@ -1,0 +1,14 @@
+{
+  "name": "pathtoglory",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Art2B",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
