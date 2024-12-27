@@ -1,0 +1,19 @@
+{% extends "layout/basic.html" %} {% block head %}
+<link rel="stylesheet" type="text/css" href="/scripts/rich-text-editor.css" />
+{% endblock %} {% block body %}
+<main>
+  <h2>Create new post</h2>
+
+  <form method="POST" action="/blog/new" id="new-form">
+    <label for="title">Title</label>
+    <input name="title" type="text" autocomplete="off" />
+    <label for="hash">Hash</label>
+    <input name="hash" type="text" autocomplete="off" />
+    <div id="editor"></div>
+    <input name="content" type="text" style="display: none" id="content" />
+    <input type="submit" value="Create" id="submit-btn" />
+  </form>
+</main>
+{% endblock %} {% block scripts %}
+<script type="text/javascript" src="/scripts/rich-text-editor.js"></script>
+{% endblock %}

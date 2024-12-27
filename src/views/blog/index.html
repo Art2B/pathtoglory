@@ -1,0 +1,14 @@
+{% extends "layout/basic.html" %} {% block body %}
+
+<main>
+  <h2>Blog</h2>
+
+  <ul>
+    {% for post in posts %}
+    <li>
+      <a href="/blog/{{ post.hash }}"> {{ post.title }} </a>
+    </li>
+    {% endfor %}
+  </ul>
+</main>
+{% endblock %}

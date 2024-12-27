@@ -1,0 +1,47 @@
+{% extends "layout/basic.html" %} {% block body %}
+<main>
+  <h2>Updates</h2>
+  <p>
+    For more updates,
+    <a href="./pathtoglory_feed.xml" type="application/xml" download
+      >subribe to the RSS feed</a
+    >
+  </p>
+  <p>
+    <time datetime="2024-10-28">28th October</time>
+    I need to update this website everyday! I don't know what will change for
+    now. Here is a list of needed updates:
+  </p>
+  <ul>
+    <li>Some CSS and a design</li>
+    <li>A way of deploying from my CLI</li>
+    <li style="text-decoration: line-through">Some Javascript ?</li>
+    <li style="text-decoration: line-through">
+      A RSS feed for my friends to stay updated
+    </li>
+  </ul>
+  <p>Basically getting into HTML5 ^^</p>
+</main>
+<hr />
+<section>
+  <article>
+    <h2>I need a blog</h2>
+    <p>Posted on <time datetime="2024-10-29 21:30">29th October 2024</time></p>
+    <p>
+      I need to have the ability to publish blog posts more easily than updating
+      this single HTML file and upload it on a storage container. It's time to
+      evolve in the web development and use a CMS !<br />
+      That would also allow me to create more pages to have more content. I need
+      to follow one of my readers' advice and see what ChatGPT have to say about
+      that. Or I could check an Awesome.re list. I'll see.
+    </p>
+    <p>
+      On another note, I created an RSS feed for this website, so don't forget
+      to
+      <a href="./pathtoglory_feed.xml" type="application/xml" download
+        >subribe to the RSS feed !</a
+      >
+    </p>
+  </article>
+</section>
+{% endblock %}

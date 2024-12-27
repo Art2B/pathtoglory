@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Path to glory</title>
+    <link rel="stylesheet" type="text/css" href="/styles/global.css" />
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    <header>
+      <h1>Path to Glory.quest</h1>
+      <p>Served from a Node server.</p>
+      <nav>
+        <a href="/">Home</a> | <a href="/blog">Blog</a> |
+        <a href="/about">About</a> |
+        <a href="/feed" type="application/xml" download>RSS feed</a>
+      </nav>
+    </header>
+    <hr />
+    {% block body %} This is the default body content {% endblock %}
+    <hr />
+    <footer>Pathtoglory.quest No copyright. Copy and paste me.</footer>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{% extends "layout/basic.html" %} {% block body %}
+
+<main>
+  <h2>{{ error.status }}</h2>
+  <p>{{ error.message }}</p>
+  <p>
+    <a href="/">Go back home</a>
+  </p>
+</main>
+{% endblock %}

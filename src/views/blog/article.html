@@ -1,0 +1,9 @@
+{% extends "layout/basic.html" %} {% block body %}
+
+<main>
+  <article>
+    <h2>{{ post.title }}</h2>
+    <div>{{ post.html_content | safe }}</div>
+  </article>
+</main>
+{% endblock %}
