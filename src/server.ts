@@ -4,6 +4,7 @@ import finalhandler from "finalhandler";
 import * as esbuild from "esbuild";
 
 import router from "./router";
+import Feed from "./feed.ts";
 
 const PORT = 1234;
 const OUTPUT_DIR = "build";

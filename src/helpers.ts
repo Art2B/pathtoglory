@@ -25,3 +25,17 @@ export function stringToFormData(queryString: string): FormData {
 
   return formData;
 }
+
+export function formatDate(date: Date): string {
+  return date.toLocaleDateString("en-UK", {
+    weekday: "short",
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    timeZoneName: "shortOffset",
+    hour12: false,
+  });
+}

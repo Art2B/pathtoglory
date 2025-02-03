@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
- <title>Path to Glory.quest</title>
- <description>Path to Glory.quest feed. Stay tuned for updates !</description>
- <link>https://www.pathtoglory.quest</link>
- <copyright>2024 pathtoglory.quest All rights reserved</copyright>
- <lastBuildDate>Tue, 29 Oct 2024 21:14:00 GMT+4</lastBuildDate>
- <pubDate>Tue, 29 Oct 2024 21:14:00 GMT+4</pubDate>
- <ttl>60</ttl>
+  <title>Path to Glory.quest</title>
+  <description>Path to Glory.quest feed. Stay tuned for updates !</description>
+  <link>https://www.pathtoglory.quest</link>
+  <copyright>2024 pathtoglory.quest All rights reserved</copyright>
+  <lastBuildDate>Tue, 29 Oct 2024 21:14:00 GMT+4</lastBuildDate>
+  <pubDate>Tue, 29 Oct 2024 21:14:00 GMT+4</pubDate>
+  <ttl>60</ttl>
 
- <item>
-  <title>An about page !</title>
-  <description>Learn more about me on my about page !</description>
-  <link>http://www.pathtoglory.quest</link>
-  <pubDate>Sun, 3 Nov 2024 21:30:00 GMT+4</pubDate>
- </item>
- <item>
-  <title>I need a blog</title>
-  <description>A rant about my need for a CMS</description>
-  <link>http://www.pathtoglory.quest</link>
-  <pubDate>Tue, 29 Oct 2024 21:30:00 GMT+4</pubDate>
- </item>
+<item>
+      <title>Le flux RSS est up</title>
+      <description>null</description>
+      <link>https://pathtoglory.quest/blog/le-flux-rss-est-up</link>
+      <pubDate>Mon, 3 Feb 2025, 22:01:00 GMT+4</pubDate>
+    </item>
+  <item>
+    <title>I need a blog</title>
+    <description>A rant about my need for a CMS</description>
+    <link>http://www.pathtoglory.quest</link>
+    <pubDate>Tue, 29 Oct 2024 21:30:00 GMT+4</pubDate>
+  </item>
+<item>
+    <title>An about page !</title>
+    <description>Learn more about me on my about page !</description>
+    <link>http://www.pathtoglory.quest</link>
+    <pubDate>Sun, 3 Nov 2024 21:30:00 GMT+4</pubDate>
+  </item>
+
 </channel>
 </rss>

@@ -1,6 +1,7 @@
 import { BlogPost } from "./model.ts";
 import { formatHash } from "@/helpers.ts";
 import DB from "@/DB.ts";
+import Feed from "@/feed.ts";
 
 const convertFormDataToBlogPost = (data: FormData): Partial<BlogPost> => {
   const title = data.get("title") as string;
@@ -18,10 +19,11 @@ export class BlogController {
     const post = convertFormDataToBlogPost(data);
 
     const query = await DB.query(
-      "INSERT INTO blog (title, hash, html_content) VALUES ($1, $2, $3)",
+      "INSERT INTO blog (title, hash, html_content) VALUES ($1, $2, $3) RETURNING title, hash, html_content, created_at",
       [post.title, post.hash, post.html_content],
     );
 
-    console.log("createPost Query result: ", query);
+    const newPost = query.rows[0];
+    Feed.addItem(newPost.title, null, newPost.hash, newPost.created_at);
   }
 }
